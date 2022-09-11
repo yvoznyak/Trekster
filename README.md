@@ -1,2 +1,2 @@
 # Trekster
-Repo for the Trekster project - a simple financial tracker
+Simple financial tracker created by Oleksiy Humenyuk, Petro Onyshko and Yura Voznyak to solve all your finance-related problems
