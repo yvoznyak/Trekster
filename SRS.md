@@ -149,7 +149,7 @@ Trekster - простий і зручний трекер обліку особи
 ## Use Case Діаграма
 
 <p align="center">
-	<img src="https://github.com/yvoznyak/Trekster/blob/main/images/use_case.jpg" alt="Use case"/>
+	<img src="https://github.com/yvoznyak/Trekster/tree/main/images" alt="Use case"/>
 </p>
 
 
