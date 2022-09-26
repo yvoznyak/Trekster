@@ -140,6 +140,12 @@ Trekster - простий і зручний трекер обліку особи
 
 Користувач вводить назву категорії і зберігає або скасовує дію.
 
+## Use Case Діаграма
+
+<p align="center">
+	<img src="https://github.com/yvoznyak/Trekster/blob/main/images/use_case.jpg" alt="Use case"/>
+</p>
+
 
 ## Нефункціональні вимоги
 
