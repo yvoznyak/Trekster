@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trekster_app", "Trekster_app\Trekster_app.csproj", "{D56EB8A9-00A6-4B2B-9DD5-31465708E487}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trekster_app_test", "Trekster_app_test\Trekster_app_test.csproj", "{5D3B420D-7D18-41F8-B6EA-DA13054E85FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D56EB8A9-00A6-4B2B-9DD5-31465708E487}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D56EB8A9-00A6-4B2B-9DD5-31465708E487}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D56EB8A9-00A6-4B2B-9DD5-31465708E487}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D56EB8A9-00A6-4B2B-9DD5-31465708E487}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D3B420D-7D18-41F8-B6EA-DA13054E85FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D3B420D-7D18-41F8-B6EA-DA13054E85FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D3B420D-7D18-41F8-B6EA-DA13054E85FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D3B420D-7D18-41F8-B6EA-DA13054E85FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {861E999B-F8F8-4792-93A4-4115E3743A86}
+	EndGlobalSection
+EndGlobal
