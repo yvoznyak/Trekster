@@ -22,10 +22,10 @@
 
 ## 📂 Project Structure
 * **`/src`** — Contains the source code, including `Trekster` and `Trekster_app` subfolders.
-* **`/db`** — Database documentation including ER diagrams, SQL schema scripts, and UML entity relationship diagrams.
-* **`/images`** — Assets and resources used within the application.
-* **`Trekster.pdf`** — Application presentation and overview.
-* **`SRS.md`** — Software Requirements Specification with detailed project requirements.
+* **`/docs`** — Project documentation and supplementary materials.
+  * `SRS.md` — Software Requirements Specification with detailed project requirements.
+  * `Trekster.pdf` — Application presentation and overview.
+  * **`/img`** — Supporting assets, including ER diagrams, UML schemas, and UI wireframes.
 
 ## ⚙️ How to Run
 1. Clone the repository.
