@@ -1,160 +1,153 @@
 # Trekster
 
-Trekster - простий і зручний трекер обліку особистих фінансів, створений для оптимізації і налагодження управління власними коштами.
+Trekster is a simple and user-friendly personal finance tracker designed to optimize and streamline personal fund management.
 
-# Вимоги
+# Requirements
 
-## Функціональні вимоги
+## Functional Requirements
 
-У додатку є тільки один тип користувача (User).  
-Користувач може:
-- Бачити співвідношення витрат до загальних доходів, та залишку до загальних дохідів
-- Додавати транзакцію (витрату чи дохід)
-- Бачити свої рахунки і баланс кожного з них
-- Додавати рахунки
-- Бачити історію транзакцій
-- Редагувати історію транзакцій
-- Бачити звітність по доходах протягом місяця
-- Бачити звітність по витратах протягом місяця
-- Налаштовуваьи рахунки і категорії (видалення і редагування)
-- Додавати категорії
+The application defines only one type of user (**User**).  
+The user can:
+- View the ratio of expenses to total income and balance to total income.
+- Add transactions (expense or income).
+- View their accounts and the balance of each.
+- Add new accounts.
+- View transaction history.
+- Edit transaction history.
+- View monthly income reports.
+- View monthly expense reports.
+- Configure accounts and categories (deleting and editing).
+- Add new categories.
 
-### Опис основних вікон програми (wireframes)
+### Description of Main Windows (Wireframes)
 
-#### 1. Головна сторінка
-
-<p align="center">
-	<img src="https://github.com/yvoznyak/Trekster/blob/main/images/main.jpg" alt="Головна"/>
-</p>
-
-Стартове вікно, що відкривається при запуску програми.  
-Зверху показаний загальний баланс на всіх рахунках, підсумований по різних валютах окремо (наприклад uah, usd, euro, usdt).  
-Посередині вікна демонструється частка витрат від загальних доходів та частка залишку від загальних доходів за весь час у відсотковому відношенні.  
-У лівій частині сторінки знаходиться меню для навігації по програмі. Містить пункти: Головна, Рахунки, Історія, Доходи, Витрати, Налаштування.  
-Внизу вікна посередині розташована кнопка "Додати транзацію", натискаючи на яку, користувач має змогу додати транзакцію.  
-Користувач обирає витрату чи дохід (select box), рахунок, з якого, чи, на який, відбулась транзакція (dropdown list), категорію транзакції (dropdown list) та суму (input) у новому вікні:
+#### 1. Home Page
 
 <p align="center">
-	<img src="https://github.com/yvoznyak/Trekster/blob/main/images/add%20trans.jpg" alt="Додавання транзакції"/>
+	<img src="https://github.com/yvoznyak/Trekster/blob/main/docs/img/ui/main.jpg" alt="Home Page"/>
 </p>
 
-#### 2. Рахунки
+The start window that opens upon application launch.  
+The top section shows the total balance across all accounts, summarized separately by different currencies (e.g., UAH, USD, EUR, USDT).  
+The center of the window displays the share of total expenses relative to total income and the share of the remaining balance relative to total income as percentages.  
+The left sidebar contains the navigation menu with the following items: Home, Accounts, History, Income, Expenses, Settings.  
+At the bottom center, there is an "Add Transaction" button. Clicking it allows the user to add a new transaction.  
+In the new window, the user selects the transaction type (expense or income via select box), the account (dropdown list), the category (dropdown list), and enters the amount (input):
 
 <p align="center">
-	<img src="https://github.com/yvoznyak/Trekster/blob/main/images/accounts.jpg" alt="Рахунки"/>
+	<img src="https://github.com/yvoznyak/Trekster/blob/main/docs/img/ui/add%20trans.jpg" alt="Add Transaction"/>
 </p>
 
-Вікно, що відкривається при переході в пункт меню Рахунки.  
-На цій сторінці відображаються послідовно усі рахунки з балансом, погрупованим по валютах У форматі: <<Назва рахунку: сума + валюта>>
-У лівій частині сторінки знаходиться меню для навігації по програмі. Містить пункти: Головна, Рахунки, Історія, Доходи, Витрати, Налаштування.  
-Внизу є кнопка з можливістю додати рахунок.  
-Користувач у новому вікні вводить назву рахунку (input), обирає валюти (checkbox) та вводить суми (input). Внизу вікна знаходиться кнопка зберегти, при натиску на яку зберігається новий рахунок :
+#### 2. Accounts
 
 <p align="center">
-	<img src="https://github.com/yvoznyak/Trekster/blob/main/images/add%20account.jpg" alt="Додавання рахунку"/>
+	<img src="https://github.com/yvoznyak/Trekster/blob/main/docs/img/ui/accounts.jpg" alt="Accounts"/>
 </p>
 
-#### 3. Історія
+The window opened by selecting the "Accounts" menu item.  
+This page displays all accounts with balances grouped by currency in the format: <<Account Name: Amount + Currency>>.  
+The left sidebar for navigation remains accessible.  
+At the bottom, there is a button to add a new account.  
+In the new window, the user enters the account name (input), selects currencies (checkbox), and enters initial amounts (input). A "Save" button at the bottom records the new account:
 
 <p align="center">
-	<img src="https://github.com/yvoznyak/Trekster/blob/main/images/history.jpg" alt="Історія"/>
+	<img src="https://github.com/yvoznyak/Trekster/blob/main/docs/img/ui/add%20account.jpg" alt="Add Account"/>
 </p>
 
-Вікно, що відкривається при переході в пункт меню Історія.  
-У лівій частині сторінки знаходиться меню для навігації по програмі. Містить пункти: Головна, Рахунки, Історія, Доходи, Витрати, Налаштування.  
-На цій сторінці відображаються в хронологічному порядку усі транзакції у форматі <<Дата, назва рахунку, категорія, сума, валюта>>.  
-Кожна транзакція має свій колір блоку - блакитний, якщо це дохід, червоний - витрата.  
-Кожен блок з транзакцією також містить у правій частині кнопку Редагувати, яка відкриває нове вікно для редагування даних про транзакцію:
+#### 3. History
 
 <p align="center">
-	<img src="https://github.com/yvoznyak/Trekster/blob/main/images/edit%20trans%201.jpg" alt="Редагування транзакції"/>
+	<img src="https://github.com/yvoznyak/Trekster/blob/main/docs/img/ui/history.jpg" alt="History"/>
 </p>
 
-Користувач має змогу змінити рахунок (dropdown list), категорію (dropdown list) та суму (input) і зберегти або видалити транзакцію, натиснувши на відповідні кнопки внизу вікна.
-
-#### 4. Доходи  
+The window opened by selecting the "History" menu item.  
+This page displays all transactions in chronological order in the format: <<Date, Account Name, Category, Amount, Currency>>.  
+Each transaction block is color-coded: blue for income and red for expense.  
+Each transaction block also contains an "Edit" button on the right, which opens a new window for modifying transaction details:
 
 <p align="center">
-	<img src="https://github.com/yvoznyak/Trekster/blob/main/images/profit.jpg" alt="Доходи"/>
+	<img src="https://github.com/yvoznyak/Trekster/blob/main/docs/img/ui/edit%20trans%201.jpg" alt="Edit Transaction"/>
 </p>
 
-Вікно, що відкривається при переході в пункт меню Доходи.  
-У лівій частині сторінки знаходиться меню для навігації по програмі. Містить пункти: Головна, Рахунки, Історія, Доходи, Витрати, Налаштування.  
-На цій сторінці відображаються сумарні доходи по категоріях з підсумованими балансами по валютах у форматі: <<Категорія: сума + валюта >> за даний місяць.  
-Внизу вікна є блок, де виводиться підсумок по всіх валютах.   
+The user can modify the account (dropdown list), category (dropdown list), and amount (input), and then save or delete the transaction using the buttons at the bottom.
 
-#### 5. Витрати  
+#### 4. Income
 
 <p align="center">
-	<img src="https://github.com/yvoznyak/Trekster/blob/main/images/expense.jpg" alt="Витрати"/>
+	<img src="https://github.com/yvoznyak/Trekster/blob/main/docs/img/ui/profit.jpg" alt="Income"/>
 </p>
 
-Вікно, що відкривається при переході в пункт меню Витрати.  
-У лівій частині сторінки знаходиться меню для навігації по програмі. Містить пункти: Головна, Рахунки, Історія, Доходи, Витрати, Налаштування.  
-На цій сторінці відображаються сумарні витрати по категоріях з підсумованими балансами по валютах у форматі: <<Категорія: сума + валюта >> за даний місяць.  
-Внизу вікна є блок, де виводиться підсумок по всіх валютах.   
+The window opened by selecting the "Income" menu item.  
+This page displays total income by category with summarized balances by currency for the current month in the format: <<Category: Amount + Currency>>.  
+A block at the bottom shows the summary for all currencies.
 
-#### 6. Налаштування  
+#### 5. Expenses
 
 <p align="center">
-	<img src="https://github.com/yvoznyak/Trekster/blob/main/images/settings%20main.jpg" alt="Налаштування"/>
+	<img src="https://github.com/yvoznyak/Trekster/blob/main/docs/img/ui/expense.jpg" alt="Expenses"/>
 </p>
 
-Вікно, що відкривається при переході в пункт меню Налаштування.  
-У лівій частині сторінки знаходиться меню для навігації по програмі. Містить пункти: Головна, Рахунки, Історія, Доходи, Витрати, Налаштування.  
-На цій сторінці відображаються два блоки - пункти: Рахунки та Категорії, які переадресовують користувача на свідповідну сторінку налаштувань.
+The window opened by selecting the "Expenses" menu item.  
+This page displays total expenses by category with summarized balances by currency for the current month in the format: <<Category: Amount + Currency>>.  
+A block at the bottom shows the summary for all currencies.
 
-#### 7. Налаштування рахунків   
+#### 6. Settings
 
 <p align="center">
-	<img src="https://github.com/yvoznyak/Trekster/blob/main/images/settings%20acc.jpg" alt="Налаштування рахунків"/>
+	<img src="https://github.com/yvoznyak/Trekster/blob/main/docs/img/ui/settings%20main.jpg" alt="Settings"/>
 </p>
 
-Вікно, що відкривається при переході в пункт Рахунки вікна Налаштування.  
-У лівій частині сторінки знаходиться меню для навігації по програмі. Містить пункти: Головна, Рахунки, Історія, Доходи, Витрати, Налаштування.  
-На цій сторінці відображаються послідовно блоки з назвою рахунків, у правій частині вони містять кнопку Редагувати, яка відкриває нове вікно і дає змогу редагувати дані про рахунок:
+The window opened by selecting the "Settings" menu item.  
+This page displays two blocks/items: Accounts and Categories, which redirect the user to the corresponding configuration pages.
+
+#### 7. Account Settings
 
 <p align="center">
-	<img src="https://github.com/yvoznyak/Trekster/blob/main/images/edit%20acc.jpg" alt="Налаштування рахунків 1"/>
+	<img src="https://github.com/yvoznyak/Trekster/blob/main/docs/img/ui/settings%20acc.jpg" alt="Account Settings"/>
 </p>
 
-Користувач має можливість змінити назву рахунку (input) та баланс.  
-Внизу знаходяться дві кнопки - Зберегти та Видалити, які виконують відповідні операції.
-
-#### 8. Налаштування категорій   
+The window opened by selecting the "Accounts" item within the Settings window.  
+This page displays account blocks sequentially. On the right side, each block contains an "Edit" button that opens a new window to modify account details:
 
 <p align="center">
-	<img src="https://github.com/yvoznyak/Trekster/blob/main/images/settings%20cat.jpg" alt="Налаштування категорій"/>
+	<img src="https://github.com/yvoznyak/Trekster/blob/main/docs/img/ui/edit%20acc.jpg" alt="Edit Account Details"/>
 </p>
 
-Вікно, що відкривається при переході в пункт Категорії вікна Налаштування.  
-У лівій частині сторінки знаходиться меню для навігації по програмі. Містить пункти: Головна, Рахунки, Історія, Доходи, Витрати, Налаштування.  
-На цій сторінці відображаються послідовно блоки з назвою категоірй, у правій частині вони містять кнопку Редагувати, яка відкриває нове вікно і дає змогу редагувати дані про категорію:
+The user can change the account name (input) and the balance.  
+Two buttons at the bottom—"Save" and "Delete"—execute the respective operations.
+
+#### 8. Category Settings
 
 <p align="center">
-	<img src="https://github.com/yvoznyak/Trekster/blob/main/images/settings%20cat%201.jpg" alt="Налаштування категорій 1"/>
+	<img src="https://github.com/yvoznyak/Trekster/blob/main/docs/img/ui/settings%20cat.jpg" alt="Category Settings"/>
 </p>
 
-Користувач має можливість змінити назву категорії (input).  
-Внизу знаходяться дві кнопки - Зберегти та Видалити, які виконують відповідні операції.  
-
-Також внизу основного вікна є кнопка додати категорію, яка дає користувача можливість додати категорію у новому вікні:
+The window opened by selecting the "Categories" item within the Settings window.  
+This page displays category blocks sequentially. On the right side, each block contains an "Edit" button that opens a new window to modify category details:
 
 <p align="center">
-	<img src="https://github.com/yvoznyak/Trekster/blob/main/images/add%20cat.jpg" alt="Додавання категорій 1"/>
+	<img src="https://github.com/yvoznyak/Trekster/blob/main/docs/img/ui/settings%20cat%201.jpg" alt="Edit Category Details"/>
 </p>
 
-Користувач вводить назву категорії і зберігає або скасовує дію.
+The user can change the category name (input).  
+"Save" and "Delete" buttons at the bottom execute the respective operations.  
 
-## Use Case Діаграма
+Additionally, there is an "Add Category" button at the bottom of the main Categories window, which allows the user to add a new category in a popup window:
 
 <p align="center">
-	<img src="https://github.com/yvoznyak/Trekster/blob/main/images/use%20case.jpg" alt="Use case"/>
+	<img src="https://github.com/yvoznyak/Trekster/blob/main/docs/img/ui/add%20cat.jpg" alt="Add New Category"/>
 </p>
 
+The user enters the category name and saves or cancels the action.
 
-## Нефункціональні вимоги
-- OC: Windows 10
-- Мова інтерфейсу: українська
-- не Responsive Design (Статичний)
-- Програма не потребує доступу до мережі Інтернет
+## Use Case Diagram
+
+<p align="center">
+	<img src="https://github.com/yvoznyak/Trekster.desktop/blob/main/docs/img/Use%20case%20diagram.jpg" alt="Use case diagram"/>
+</p>
+
+## Non-functional Requirements
+- **OS:** Windows 10
+- **Interface Language:** Ukrainian
+- **Design:** Static (Non-Responsive Design)
+- **Connectivity:** The program does not require an Internet connection
