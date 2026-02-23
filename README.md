@@ -1,6 +1,6 @@
-# Trekster.desktop 💰
+# Trekster-desktop 💰
 
-**Trekster.desktop** is a simple personal finance application for Windows. It provides a straightforward way to manage daily finances through a dedicated desktop interface.
+**Trekster-desktop** is a simple personal finance application for Windows. It provides a straightforward way to manage daily finances through a dedicated desktop interface.
 
 ---
 
